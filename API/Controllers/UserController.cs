@@ -1,14 +1,11 @@
 ﻿using Data.DbContext_Conection;
-using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Model.Entidades;
 
 namespace API.Controllers
 {
-    [Route("api/[controller]")]  //api/user
-    [ApiController]
-    public class UserController : ControllerBase
+    public class UserController : BaseApiController
     {
 
         private readonly ApplicationDbContext? _context;
